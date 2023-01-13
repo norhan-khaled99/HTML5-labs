@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="lan1">English</label>
+    <meter id="lan1" min="0" max="100" value="70"></meter><br>
+    
+    <label for="lan2">Arabic</label>
+    <meter id="lan2" min="0" max="100" value="85"></meter><br>
+
+    <label for="lan3">Spanish</label>
+    <meter id="lan3" min="0" max="100" value="50"></meter><br>
+    <br>
+    
+    <time datetime="1999-12-29">29-12-1999</time>
+    
+    <br>
+    <audio src="audio/bgsound.mp3" id="audio1" ></audio><!--controls autoplay muted-->
+   
+
+    <br>
+    <input type="button" value="play" onclick="audioPlay()"> 
+    <input type="button" value="pause" onclick="audiopause()">
+     <br>
+    
+    <video src="vidoe/I'm Still Here - YouTube - Google Chrome 2022-12-12 00-56-32.mp4" id="video1" height="200" width="200"></video>
+    <input type="button" value="play" onclick="videoPlay()"> 
+    <input type="button" value="pause" onclick="videopause()">
+     <br>
+    
+    <script>
+    function audioPlay(){
+            document.getElementById("audio1").play();
+       }
+       function audiopause(){
+            document.getElementById("audio1").pause();
+       }
+       
+       function videoPlay(){
+            document.getElementById("video1").play();
+       }
+       function videopause(){
+            document.getElementById("video1").pause();
+       }
+    </script>
+</body>
+</html>
